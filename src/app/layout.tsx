@@ -20,6 +20,15 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.png", type: "image/png", sizes: "512x512" },
+    ],
+    apple: [
+      { url: "/apple-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+  },
   openGraph: {
     title: "NixaTV – Best IPTV Service 2026 | 50K+ Channels & Live Sports",
     description: "Upgrade to NixaTV for buffer-free 4K/8K live sports, 50,000+ channels & 150,000+ movies in 60 FPS. Anti-Freeze technology, instant activation & 24/7 support.",
