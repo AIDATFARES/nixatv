@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { CheckCircle, ShieldCheck, Zap, Tv } from "lucide-react";
 
 export default function ComparisonSection() {
@@ -18,7 +19,6 @@ export default function ComparisonSection() {
               alt="NixaTV 4K IPTV Streaming Service on Smart TV with Live Sports and Movies"
               title="NixaTV Premium 4K & 8K IPTV Streaming Platform"
               fill 
-              unoptimized
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover group-hover:scale-105 transition-transform duration-700 opacity-90 group-hover:opacity-100"
             />
@@ -53,7 +53,7 @@ export default function ComparisonSection() {
             </p>
             
             <p className="text-slate-300 text-sm md:text-base mb-8 leading-relaxed">
-              Compatible across Amazon Firestick, Smart TVs, Android TV, Apple TV, iOS, Windows, and MAG boxes. Explore our transparent <a href="/pricing" className="text-cyan-400 hover:underline font-medium">subscription pricing</a> or browse our comprehensive <a href="/channels" className="text-cyan-400 hover:underline font-medium">channel catalog</a> for instant setup.
+              Compatible across Amazon Firestick, Smart TVs, Android TV, Apple TV, iOS, Windows, and MAG boxes. Explore our transparent <Link href="/pricing" className="text-cyan-400 hover:underline font-medium">subscription pricing</Link> or browse our comprehensive <Link href="/channels" className="text-cyan-400 hover:underline font-medium">channel catalog</Link> for instant setup.
             </p>
 
             {/* Stats Cards */}

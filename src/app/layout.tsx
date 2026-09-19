@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Geist } from "next/font/google";
+import { Inter } from "next/font/google";
 import Link from "next/link";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
 import "./globals.css";
@@ -11,14 +11,6 @@ const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
   display: "swap",
-  preload: false,
-});
-
-const geist = Geist({
-  variable: "--font-geist",
-  subsets: ["latin"],
-  display: "swap",
-  preload: false,
 });
 
 export const metadata: Metadata = {
@@ -98,7 +90,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`dark ${inter.variable} ${geist.variable}`}>
+    <html lang="en" className={`dark ${inter.variable}`}>
       <head>
         <script
           type="application/ld+json"

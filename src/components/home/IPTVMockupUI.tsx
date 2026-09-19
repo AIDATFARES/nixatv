@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import { ShieldCheck } from "lucide-react";
 
@@ -35,15 +33,15 @@ export default function IPTVMockupUI() {
       </div>
 
       {/* Web Player Image Screen */}
-      <div className="relative rounded-xl overflow-hidden border border-white/10 shadow-2xl group/img">
+      <div className="relative rounded-xl overflow-hidden border border-white/10 shadow-2xl group/img aspect-[900/502]">
         <Image
           src="/webplayer-preview-900.webp"
           alt="NixaTV Web Player 4K Interface - 50,000+ Live Channels & Sports"
           title="NixaTV Web Player 4K Ultra HD Interface"
           width={900}
           height={502}
+          sizes="(max-width: 640px) 92vw, (max-width: 1024px) 80vw, 700px"
           priority
-          unoptimized
           className="w-full h-auto object-cover rounded-xl group-hover/img:scale-[1.01] transition-transform duration-500"
         />
       </div>

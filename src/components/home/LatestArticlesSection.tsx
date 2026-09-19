@@ -33,6 +33,10 @@ export default function LatestArticlesSection() {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90 group-hover:opacity-100"
                     alt={post.title}
                     src={post.coverImage || "/og-image.jpg"}
+                    loading="lazy"
+                    decoding="async"
+                    width={400}
+                    height={192}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0C1222] via-transparent to-transparent" />
                   <span className="absolute top-4 left-4 px-3 py-1 bg-[#05070E]/80 backdrop-blur-md text-cyan-400 rounded-full text-xs font-bold border border-indigo-500/30">

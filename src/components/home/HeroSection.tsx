@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import { Sparkles, CheckCircle2, Play, ArrowRight, Activity, Shield, Zap } from "lucide-react";
 import IPTVMockupUI from "@/components/home/IPTVMockupUI";
@@ -15,10 +13,12 @@ export default function HeroSection() {
   return (
     <section className="relative pt-28 md:pt-36 pb-20 md:pb-28 bg-[#05070E] bg-tech-grid bg-atmosphere overflow-hidden">
       
-      {/* Hero Atmospheric Glowing Orbs */}
-      <div className="absolute top-1/4 left-5 w-[420px] h-[420px] bg-indigo-600/15 rounded-full blur-[130px] pointer-events-none" />
-      <div className="absolute top-1/3 right-5 w-[460px] h-[460px] bg-purple-600/18 rounded-full blur-[140px] pointer-events-none" />
-      <div className="absolute top-1/2 left-1/3 w-[360px] h-[360px] bg-cyan-500/12 rounded-full blur-[120px] pointer-events-none" />
+      {/* Hero Atmospheric Glowing Orbs - Statically Contained */}
+      <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
+        <div className="absolute top-0 -left-10 w-72 sm:w-96 h-72 sm:h-96 bg-indigo-600/15 rounded-full blur-[120px]" />
+        <div className="absolute top-20 -right-10 w-72 sm:w-96 h-72 sm:h-96 bg-purple-600/18 rounded-full blur-[120px]" />
+        <div className="absolute top-64 left-1/4 w-60 sm:w-80 h-60 sm:h-80 bg-cyan-500/12 rounded-full blur-[100px]" />
+      </div>
 
       <div className="relative z-10 max-w-[1400px] mx-auto px-4 sm:px-8">
         
