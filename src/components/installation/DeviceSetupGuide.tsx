@@ -84,7 +84,7 @@ export default function DeviceSetupGuide() {
             number="1" 
             title="Install IPTV App"
           >
-            Navigate to your device's official app store, search for <strong className="text-white">{device.app}</strong>, and download the application directly.
+            Navigate to your device&apos;s official app store, search for <strong className="text-white">{device.app}</strong>, and download the application directly.
           </SetupStep>
           
           <SetupStep 

@@ -1,4 +1,4 @@
-import { Trophy, Flame, Play, Shield, Zap, Sparkles } from "lucide-react";
+import { Trophy, Play, Zap } from "lucide-react";
 
 export default function SportsSection() {
   const sports = [

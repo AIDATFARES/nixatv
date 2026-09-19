@@ -6,7 +6,6 @@ import {
   ChevronDown,
   ChevronUp,
   Headphones,
-  MonitorSmartphone,
   Server,
   ShieldCheck,
   ShoppingCart,

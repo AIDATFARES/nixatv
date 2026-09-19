@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { CheckCircle, ShieldCheck, Zap, Tv } from "lucide-react";
+import { Tv } from "lucide-react";
 
 export default function ComparisonSection() {
   return (

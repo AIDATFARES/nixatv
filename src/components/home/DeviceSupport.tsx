@@ -1,4 +1,4 @@
-import { Tv, Smartphone, Monitor, Laptop, Globe, Flame, Apple, HardDrive, Gamepad2 } from "lucide-react";
+import { Tv, Smartphone, Monitor, Laptop, Globe, Flame, Apple } from "lucide-react";
 import Link from "next/link";
 
 export default function DeviceSupport() {

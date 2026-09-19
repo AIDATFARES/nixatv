@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { CheckCircle2, CreditCard, Bitcoin, Wallet, Sparkles, ShieldCheck, Zap } from "lucide-react";
+import { CheckCircle2, CreditCard, Bitcoin, Wallet, Sparkles, ShieldCheck } from "lucide-react";
 
 type PlanFeature = {
   text: string;
