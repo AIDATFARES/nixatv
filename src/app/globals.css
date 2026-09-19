@@ -1,17 +1,19 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: #060810;
-  --color-secondary-bg: #080B14;
-  --color-card: #0D111B;
-  --color-card-hover: #111621;
+  --color-background: #05070E;
+  --color-secondary-bg: #080D1A;
+  --color-card: #0C1222;
+  --color-card-hover: #121A30;
   --color-on-background: #F8FAFC;
   
-  --color-primary-cyan: #38BDF8;
-  --color-primary-indigo: #818CF8;
-  --color-primary-purple: #7C3AED;
-  --color-text-muted: #A7B0C0;
-  --color-text-hover: #60A5FA;
+  --color-primary-cyan: #06B6D4;
+  --color-primary-sky: #38BDF8;
+  --color-primary-indigo: #6366F1;
+  --color-primary-violet: #8B5CF6;
+  --color-primary-emerald: #10B981;
+  --color-text-muted: #94A3B8;
+  --color-text-hover: #38BDF8;
 
   --radius: 0.5rem;
   --radius-lg: 0.75rem;
@@ -24,10 +26,10 @@
 
 @layer base {
   body {
-    background-color: #060810;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
-                      linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
-    background-size: 50px 50px;
+    background-color: #05070E;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+    background-size: 40px 40px;
     background-attachment: fixed;
     color: #F8FAFC;
     font-family: var(--font-inter), sans-serif;
@@ -46,10 +48,10 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(circle at 15% 20%, rgba(56, 189, 248, 0.16) 0%, transparent 50%),
-                radial-gradient(circle at 50% 50%, rgba(129, 140, 248, 0.12) 0%, transparent 55%),
-                radial-gradient(circle at 85% 30%, rgba(124, 58, 237, 0.18) 0%, transparent 50%),
-                radial-gradient(circle at 50% 85%, rgba(56, 189, 248, 0.14) 0%, transparent 55%);
+    background: radial-gradient(circle at 15% 15%, rgba(99, 102, 241, 0.18) 0%, transparent 45%),
+                radial-gradient(circle at 85% 25%, rgba(139, 92, 246, 0.20) 0%, transparent 48%),
+                radial-gradient(circle at 50% 60%, rgba(6, 182, 212, 0.14) 0%, transparent 50%),
+                radial-gradient(circle at 30% 90%, rgba(16, 185, 129, 0.10) 0%, transparent 45%);
     pointer-events: none;
     z-index: 0;
   }
@@ -57,20 +59,20 @@
 
 /* Background Grid System */
 .bg-tech-grid {
-  background-image: linear-gradient(rgba(56, 189, 248, 0.05) 1px, transparent 1px),
-                    linear-gradient(90deg, rgba(56, 189, 248, 0.05) 1px, transparent 1px);
-  background-size: 50px 50px;
+  background-image: linear-gradient(rgba(99, 102, 241, 0.04) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(6, 182, 212, 0.04) 1px, transparent 1px);
+  background-size: 44px 44px;
 }
 
 @media (max-width: 1024px) {
   .bg-tech-grid {
-    background-size: 45px 45px;
+    background-size: 36px 36px;
   }
 }
 
 @media (max-width: 640px) {
   .bg-tech-grid {
-    background-size: 35px 35px;
+    background-size: 28px 28px;
   }
 }
 
@@ -86,80 +88,84 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at 15% 20%, rgba(56, 189, 248, 0.18) 0%, transparent 45%),
-              radial-gradient(circle at 50% 50%, rgba(129, 140, 248, 0.14) 0%, transparent 50%),
-              radial-gradient(circle at 85% 30%, rgba(124, 58, 237, 0.20) 0%, transparent 45%);
+  background: radial-gradient(circle at 10% 20%, rgba(99, 102, 241, 0.16) 0%, transparent 45%),
+              radial-gradient(circle at 80% 30%, rgba(139, 92, 246, 0.16) 0%, transparent 50%),
+              radial-gradient(circle at 50% 80%, rgba(6, 182, 212, 0.12) 0%, transparent 55%);
   pointer-events: none;
   z-index: 0;
 }
 
 .hero-glow {
-  background: radial-gradient(circle at 20% 30%, rgba(56, 189, 248, 0.22) 0%, transparent 50%),
-              radial-gradient(circle at 50% 40%, rgba(6, 182, 212, 0.15) 0%, transparent 55%),
-              radial-gradient(circle at 80% 30%, rgba(129, 140, 248, 0.25) 0%, transparent 50%);
+  background: radial-gradient(circle at 30% 30%, rgba(99, 102, 241, 0.25) 0%, transparent 55%),
+              radial-gradient(circle at 70% 35%, rgba(139, 92, 246, 0.22) 0%, transparent 50%),
+              radial-gradient(circle at 50% 65%, rgba(6, 182, 212, 0.18) 0%, transparent 55%);
 }
 
 .card-glow-featured {
-  background: radial-gradient(circle at 50% 0%, rgba(56, 189, 248, 0.15) 0%, transparent 70%),
-              radial-gradient(circle at 50% 100%, rgba(129, 140, 248, 0.20) 0%, transparent 70%);
+  background: radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.22) 0%, transparent 75%),
+              radial-gradient(circle at 50% 100%, rgba(6, 182, 212, 0.18) 0%, transparent 75%);
 }
 
 /* Component Utility Classes */
 @layer components {
   /* Buttons */
   .btn-primary {
-    background: linear-gradient(90deg, #38BDF8 0%, #818CF8 100%);
-    color: #061018;
+    background: linear-gradient(135deg, #6366F1 0%, #8B5CF6 50%, #06B6D4 100%);
+    color: #FFFFFF;
     font-weight: 700;
     border-radius: 9999px;
-    padding: 0.75rem 1.75rem;
+    padding: 0.75rem 1.85rem;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 4px 20px rgba(56, 189, 248, 0.25);
+    box-shadow: 0 4px 24px rgba(99, 102, 241, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.15);
   }
 
   .btn-primary:hover {
-    filter: brightness(1.1);
+    filter: brightness(1.15);
     transform: translateY(-2px);
-    box-shadow: 0 8px 30px rgba(129, 140, 248, 0.4);
+    box-shadow: 0 8px 32px rgba(139, 92, 246, 0.5);
   }
 
   .btn-secondary {
-    background: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.10);
-    color: #DCE3EE;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: #E2E8F0;
     font-weight: 600;
     border-radius: 9999px;
-    padding: 0.75rem 1.75rem;
+    padding: 0.75rem 1.85rem;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-blur: 8px;
   }
 
   .btn-secondary:hover {
-    border-color: rgba(96, 165, 250, 0.35);
-    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(99, 102, 241, 0.5);
+    background: rgba(99, 102, 241, 0.1);
     color: #FFFFFF;
     transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(99, 102, 241, 0.2);
   }
 
   /* Cards */
-  .bexy-card {
-    background-color: #0D111B;
+  .nixa-card {
+    background: linear-gradient(180deg, rgba(16, 24, 44, 0.75) 0%, rgba(10, 15, 28, 0.85) 100%);
     border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 16px;
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .bexy-card:hover {
-    background-color: #111621;
-    border-color: rgba(96, 165, 250, 0.25);
-    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+  .nixa-card:hover {
+    background: linear-gradient(180deg, rgba(22, 33, 60, 0.85) 0%, rgba(13, 20, 38, 0.95) 100%);
+    border-color: rgba(99, 102, 241, 0.35);
+    box-shadow: 0 12px 35px -8px rgba(99, 102, 241, 0.25);
   }
 
   /* Typography formats */
@@ -173,7 +179,7 @@
     @apply font-extrabold tracking-wide text-white text-lg sm:text-xl;
   }
   .text-format-marketing p {
-    @apply text-[#A7B0C0] leading-relaxed text-sm sm:text-base font-normal;
+    @apply text-[#94A3B8] leading-relaxed text-sm sm:text-base font-normal;
   }
   .text-format-marketing strong, 
   .text-format-marketing b {
@@ -191,14 +197,14 @@
     @apply font-semibold text-white tracking-normal mt-7 mb-3 text-lg sm:text-xl;
   }
   .text-format-blog p {
-    @apply text-[#A7B0C0] leading-8 text-base sm:text-lg mb-6 font-normal tracking-wide;
+    @apply text-[#94A3B8] leading-8 text-base sm:text-lg mb-6 font-normal tracking-wide;
   }
   .text-format-blog strong, 
   .text-format-blog b {
     @apply font-bold text-white bg-white/5 px-1.5 py-0.5 rounded;
   }
   .text-format-blog a {
-    @apply text-[#60A5FA] font-medium underline underline-offset-4 hover:text-[#93C5FD] transition-colors;
+    @apply text-[#38BDF8] font-medium underline underline-offset-4 hover:text-[#818CF8] transition-colors;
   }
 }
 

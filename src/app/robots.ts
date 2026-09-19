@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/'],
     },
-    sitemap: 'https://www.bexytv8k.shop/sitemap.xml',
+    sitemap: 'https://www.nixatv.pro/sitemap.xml',
   };
 }

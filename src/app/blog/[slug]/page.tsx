@@ -18,10 +18,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const post = blogPosts.find((p) => p.slug === resolvedParams.slug);
 
   if (!post) {
-    return { title: 'Post Not Found | BexyTV' };
+    return { title: 'Post Not Found | NixaTV' };
   }
 
-  const siteUrl = 'https://www.bexytv8k.shop';
+  const siteUrl = 'https://www.nixatv.pro';
   const postUrl = `${siteUrl}/blog/${post.slug}`;
   const ogImage = post.coverImage
     ? (post.coverImage.startsWith('http') ? post.coverImage : `${siteUrl}${post.coverImage}`)
@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       title: post.title,
       description: post.description,
       url: postUrl,
-      siteName: 'BexyTV',
+      siteName: 'NixaTV',
       type: 'article',
       images: [
         {
@@ -116,24 +116,24 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
     "@type": "Article",
     "headline": post.title,
     "description": post.description,
-    "image": post.coverImage ? (post.coverImage.startsWith('http') ? post.coverImage : `https://www.bexytv8k.shop${post.coverImage}`) : undefined,
+    "image": post.coverImage ? (post.coverImage.startsWith('http') ? post.coverImage : `https://www.nixatv.pro${post.coverImage}`) : undefined,
     "datePublished": post.date,
     "author": {
       "@type": "Organization",
-      "name": post.author || "BexyTV Team",
-      "url": "https://www.bexytv8k.shop",
+      "name": post.author || "NixaTV Team",
+      "url": "https://www.nixatv.pro",
     },
     "publisher": {
       "@type": "Organization",
-      "name": "BexyTV",
+      "name": "NixaTV",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://www.bexytv8k.shop/icon.png",
+        "url": "https://www.nixatv.pro/icon.png",
       },
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `https://www.bexytv8k.shop/blog/${post.slug}`,
+      "@id": `https://www.nixatv.pro/blog/${post.slug}`,
     },
   };
 
@@ -145,19 +145,19 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://www.bexytv8k.shop",
+        "item": "https://www.nixatv.pro",
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Blog",
-        "item": "https://www.bexytv8k.shop/blog",
+        "item": "https://www.nixatv.pro/blog",
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": post.title,
-        "item": `https://www.bexytv8k.shop/blog/${post.slug}`,
+        "item": `https://www.nixatv.pro/blog/${post.slug}`,
       },
     ],
   };
@@ -179,34 +179,34 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     h2: ({ node, ...props }: any) => <h2 className="text-xl sm:text-2xl font-black mt-10 mb-4 text-white uppercase tracking-tight" {...props} />,
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    h3: ({ node, ...props }: any) => <h3 className="text-lg font-bold mt-8 mb-3 text-[#38BDF8]" {...props} />,
+    h3: ({ node, ...props }: any) => <h3 className="text-lg font-bold mt-8 mb-3 text-cyan-400" {...props} />,
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    p: ({ node, ...props }: any) => <p className="mb-6 leading-relaxed text-xs sm:text-sm text-[#A7B0C0]" {...props} />,
+    p: ({ node, ...props }: any) => <p className="mb-6 leading-relaxed text-xs sm:text-sm text-slate-300" {...props} />,
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    ul: ({ node, ...props }: any) => <ul className="list-disc pl-6 mb-6 space-y-2 text-xs sm:text-sm text-[#A7B0C0]" {...props} />,
+    ul: ({ node, ...props }: any) => <ul className="list-disc pl-6 mb-6 space-y-2 text-xs sm:text-sm text-slate-300" {...props} />,
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    ol: ({ node, ...props }: any) => <ol className="list-decimal pl-6 mb-6 space-y-2 text-xs sm:text-sm text-[#A7B0C0]" {...props} />,
+    ol: ({ node, ...props }: any) => <ol className="list-decimal pl-6 mb-6 space-y-2 text-xs sm:text-sm text-slate-300" {...props} />,
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    a: ({ node, ...props }: any) => <a className="text-[#38BDF8] hover:text-[#818CF8] underline font-bold transition-colors" {...props} />,
+    a: ({ node, ...props }: any) => <a className="text-cyan-400 hover:text-indigo-300 underline font-bold transition-colors" {...props} />,
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    blockquote: ({ node, ...props }: any) => <blockquote className="border-l-4 border-[#38BDF8] pl-4 py-2 mb-6 italic bg-white/5 rounded-r text-[#F8FAFC]" {...props} />,
+    blockquote: ({ node, ...props }: any) => <blockquote className="border-l-4 border-indigo-500 pl-4 py-2 mb-6 italic bg-white/5 rounded-r text-[#F8FAFC]" {...props} />,
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     table: ({ node, ...props }: any) => <span className="overflow-x-auto mb-8 block"><table className="w-full text-left border-collapse" {...props} /></span>,
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     th: ({ node, ...props }: any) => <th className="border-b border-white/10 py-3 px-4 font-bold text-white bg-white/5 text-xs uppercase" {...props} />,
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    td: ({ node, ...props }: any) => <td className="border-b border-white/10 py-3 px-4 text-xs text-[#A7B0C0]" {...props} />,
+    td: ({ node, ...props }: any) => <td className="border-b border-white/10 py-3 px-4 text-xs text-slate-400" {...props} />,
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     img: ({ node, alt, src, ...props }: any) => (
       <span className="my-8 flex flex-col items-center block">
-        <img src={src} alt={alt} className="rounded-2xl max-w-full border border-white/10" {...props} />
-        {alt && <span className="text-xs text-center block mt-2 text-[#A7B0C0] opacity-80">{alt}</span>}
+        <img src={src} alt={alt} className="rounded-2xl max-w-full border border-indigo-500/20" {...props} />
+        {alt && <span className="text-xs text-center block mt-2 text-slate-400 opacity-80">{alt}</span>}
       </span>
     ),
   };
 
   return (
-    <main className="w-full min-h-screen bg-[#060810] bg-tech-grid bg-atmosphere text-[#F8FAFC] relative z-10">
+    <main className="w-full min-h-screen bg-[#05070E] bg-tech-grid bg-atmosphere text-[#F8FAFC] relative z-10">
       <div className="pt-16 pb-24 px-4 sm:px-6 md:px-12 max-w-[1024px] mx-auto w-full relative z-10">
       <script
         type="application/ld+json"
@@ -224,22 +224,22 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
       )}
 
       {/* Background Glow */}
-      <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-gradient-to-b from-[#38BDF8]/10 via-[#818CF8]/5 to-transparent blur-3xl opacity-50" />
+      <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-gradient-to-b from-indigo-500/15 via-purple-500/10 to-transparent blur-3xl opacity-50" />
 
-      <Link href="/blog" className="inline-flex items-center text-xs font-black uppercase tracking-wider text-[#38BDF8] hover:text-[#818CF8] mb-8 transition-colors group">
+      <Link href="/blog" className="inline-flex items-center text-xs font-black uppercase tracking-wider text-cyan-400 hover:text-indigo-300 mb-8 transition-colors group">
         <ArrowLeft className="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform" />
         Back to Blog Listing
       </Link>
 
-      <article className="bg-[#0D111B] border border-white/10 rounded-3xl p-6 md:p-12 shadow-2xl relative z-10">
+      <article className="bg-[#0C1222] border border-indigo-500/20 rounded-3xl p-6 md:p-12 shadow-2xl relative z-10">
         <header className="mb-10 text-center">
-          <span className="inline-block px-3 py-1 bg-[#38BDF8]/10 text-[#38BDF8] rounded-full text-[10px] font-black uppercase tracking-wider mb-4 border border-[#38BDF8]/20">
+          <span className="inline-block px-3 py-1 bg-indigo-500/10 text-cyan-300 rounded-full text-[10px] font-black uppercase tracking-wider mb-4 border border-indigo-500/20">
             {post.category}
           </span>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-6 uppercase tracking-tight leading-tight">
             {post.title}
           </h1>
-          <div className="flex items-center justify-center gap-4 text-[#A7B0C0] text-xs font-semibold uppercase tracking-wider">
+          <div className="flex items-center justify-center gap-4 text-slate-400 text-xs font-semibold uppercase tracking-wider">
             <span>{post.date}</span>
             <span>•</span>
             <span>By {post.author}</span>
@@ -247,7 +247,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
         </header>
 
         {post.coverImage && (
-          <div className="mb-12 rounded-2xl overflow-hidden relative w-full h-[280px] md:h-[480px] border border-white/10">
+          <div className="mb-12 rounded-2xl overflow-hidden relative w-full h-[280px] md:h-[480px] border border-indigo-500/20">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={post.coverImage}
@@ -257,7 +257,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
           </div>
         )}
 
-        <div className="max-w-none text-[#A7B0C0]">
+        <div className="max-w-none text-slate-300">
           <ReactMarkdown remarkPlugins={[remarkGfm]} components={markdownComponents}>
             {contentPart1}
           </ReactMarkdown>
@@ -273,7 +273,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
           <BlogOfferCard />
 
           {faqs.length > 0 && (
-            <div className="mt-12 mb-8 border-t border-white/10 pt-8">
+            <div className="mt-12 mb-8 border-t border-indigo-500/20 pt-8">
               <h2 className="text-xl sm:text-2xl font-black mb-6 text-white uppercase">Frequently Asked Questions</h2>
               <ArticleFAQAccordion faqs={faqs} />
             </div>
@@ -294,12 +294,12 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
           .slice(0, 3);
         if (relatedPosts.length === 0) return null;
         return (
-          <section className="mt-16 pt-12 border-t border-white/10 relative z-10">
+          <section className="mt-16 pt-12 border-t border-indigo-500/20 relative z-10">
             <h2 className="text-2xl font-black text-white mb-8 uppercase">Related Articles</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {relatedPosts.map((relPost) => (
                 <Link href={`/blog/${relPost.slug}`} key={relPost.id}>
-                  <article className="bg-[#0D111B] rounded-2xl overflow-hidden flex flex-col group cursor-pointer hover:border-[#38BDF8]/50 transition-all duration-300 h-full border border-white/10 shadow-xl">
+                  <article className="bg-[#0C1222] rounded-2xl overflow-hidden flex flex-col group cursor-pointer hover:border-cyan-400/50 transition-all duration-300 h-full border border-indigo-500/20 shadow-xl">
                     <div className="h-40 relative overflow-hidden shrink-0">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img
@@ -309,11 +309,11 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
                       />
                     </div>
                     <div className="p-5 flex flex-col flex-grow">
-                      <span className="text-[10px] text-[#38BDF8] font-black uppercase tracking-wider mb-2">{relPost.category}</span>
-                      <h3 className="text-sm font-bold text-white mb-2 line-clamp-2 group-hover:text-[#38BDF8] transition-colors leading-snug">
+                      <span className="text-[10px] text-cyan-400 font-black uppercase tracking-wider mb-2">{relPost.category}</span>
+                      <h3 className="text-sm font-bold text-white mb-2 line-clamp-2 group-hover:text-cyan-300 transition-colors leading-snug">
                         {relPost.title}
                       </h3>
-                        <p className="text-[10px] text-[#A7B0C0] line-clamp-2 mt-auto font-semibold uppercase tracking-wider">
+                        <p className="text-[10px] text-slate-400 line-clamp-2 mt-auto font-semibold uppercase tracking-wider">
                         {relPost.date}
                       </p>
                     </div>
