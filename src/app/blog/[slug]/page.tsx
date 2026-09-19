@@ -58,22 +58,22 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 }
 
 function parseArticleContent(content: string) {
-  const faqMatch = content.match(/## Frequently Asked Questions([\s\S]*?)(?=\n## |$)/);
+  const faqMatch = content.match(/##\s+(?:\d+\.\s+)?.*?(?:Frequently Asked Questions|FAQ)(?:[^\n]*\n)([\s\S]*?)(?=\n##\s+|$)/i);
   if (!faqMatch) {
     return { beforeFaq: content, faqs: [], afterFaq: "" };
   }
 
-  const faqBlock = faqMatch[0];
-  const faqStartIndex = content.indexOf("## Frequently Asked Questions");
+  const fullMatch = faqMatch[0];
+  const faqStartIndex = content.indexOf(fullMatch);
   const beforeFaq = content.substring(0, faqStartIndex);
-  const afterFaq = content.substring(faqStartIndex + faqBlock.length);
+  const afterFaq = content.substring(faqStartIndex + fullMatch.length);
 
   const faqItems: { question: string; answer: string }[] = [];
-  const qBlocks = faqMatch[1].split(/\n### /).slice(1);
+  const qBlocks = faqMatch[1].split(/\n###\s+/).slice(1);
 
   for (const block of qBlocks) {
     const lines = block.trim().split("\n");
-    const question = lines[0].trim();
+    const question = lines[0].trim().replace(/^\d+\.\s*/, "");
     const answer = lines.slice(1).join("\n").trim().replace(/\[([^\]]+)\]\(([^)]+)\)/g, "$1");
     if (question && answer) {
       faqItems.push({ question, answer });
