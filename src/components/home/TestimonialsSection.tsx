@@ -73,7 +73,8 @@ export default function TestimonialsSection() {
               >
                 <Image
                   src={`/reviews/${img}`}
-                  alt="NixaTV Customer Review"
+                  alt={`NixaTV Verified Customer Review ${(index % reviewImages.length) + 1} - 5 Star IPTV Rating`}
+                  title={`NixaTV Verified Customer Review & Feedback ${(index % reviewImages.length) + 1}`}
                   fill
                   sizes="(max-width: 640px) 220px, 280px"
                   className="object-contain group-hover:scale-105 transition-transform duration-300"

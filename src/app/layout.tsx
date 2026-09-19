@@ -38,7 +38,7 @@ export const metadata: Metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "NixaTV Premium IPTV Service",
+        alt: "NixaTV Premium 4K & 8K IPTV Streaming Platform - 50,000+ Channels & VOD",
       },
     ],
     locale: "en_US",
@@ -48,8 +48,48 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "NixaTV – Premium 4K & 8K IPTV Subscription | 50,000+ Channels",
     description: "Stream 50,000+ live sports & channels + 150,000+ VOD movies in 60 FPS 4K Ultra HD. Anti-Freeze v2 tech, zero buffering, instant WhatsApp setup with NixaTV.",
-    images: ["/og-image.jpg"],
+    images: [
+      {
+        url: "/og-image.jpg",
+        alt: "NixaTV Premium 4K & 8K IPTV Streaming Platform",
+      },
+    ],
   },
+};
+
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "NixaTV",
+  url: "https://www.nixatv.pro",
+  logo: "https://www.nixatv.pro/og-image.jpg",
+  image: {
+    "@type": "ImageObject",
+    url: "https://www.nixatv.pro/og-image.jpg",
+    width: 1200,
+    height: 630,
+    caption: "NixaTV Premium 4K & 8K IPTV Streaming Platform"
+  },
+  sameAs: [],
+  contactPoint: {
+    "@type": "ContactPoint",
+    contactType: "customer service",
+    availableLanguage: ["English", "French", "Spanish", "Arabic"],
+    url: "https://wa.me/213552069874"
+  }
+};
+
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "NixaTV",
+  url: "https://www.nixatv.pro",
+  description: "Premium 4K & 8K IPTV Subscription with 50,000+ Live Channels & 150,000+ VODs",
+  potentialAction: {
+    "@type": "SearchAction",
+    target: "https://www.nixatv.pro/channels?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
 };
 
 export default function RootLayout({
@@ -59,7 +99,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`dark ${inter.variable} ${geist.variable}`}>
-      <head />
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        />
+      </head>
       <body className="bg-[#05070E] bg-tech-grid bg-atmosphere text-[#F8FAFC] font-body-lg min-h-screen flex flex-col antialiased selection:bg-indigo-500 selection:text-white relative">
         {/* Navbar Component */}
         <Navbar />

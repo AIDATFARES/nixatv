@@ -29,7 +29,7 @@ const steps = [
       </>
     ),
     image: "/step-1-order-ai.png",
-    imageAlt: "Place your order online",
+    imageAlt: "Step 1: Order your NixaTV IPTV Subscription Plan",
     align: "left" as const,
   },
   {
@@ -45,7 +45,7 @@ const steps = [
       </>
     ),
     image: "/step-2-setup-ai.png",
-    imageAlt: "Instant installation on any device",
+    imageAlt: "Step 2: Instant NixaTV Activation and App Setup on Any Device",
     align: "right" as const,
   },
   {
@@ -61,7 +61,7 @@ const steps = [
       </>
     ),
     image: "/step-3-watch-ai.png",
-    imageAlt: "Watch and enjoy live TV",
+    imageAlt: "Step 3: Watch and Stream 50,000+ 4K Channels on NixaTV",
     align: "left" as const,
   },
 ];
@@ -206,7 +206,8 @@ export default function HowItWorksPage() {
               <div className="overflow-hidden rounded-3xl border border-indigo-500/20 shadow-2xl">
                 <Image
                   src="/features-1-ai.png"
-                  alt="Complete IPTV Subscription Experience"
+                  alt="NixaTV 4K Ultra HD Live Sports and IPTV Streaming Experience"
+                  title="NixaTV Premium 4K IPTV Streaming"
                   width={600}
                   height={400}
                   className="w-full h-72 object-cover hover:scale-105 transition-transform duration-500 opacity-90 hover:opacity-100"
@@ -251,7 +252,8 @@ export default function HowItWorksPage() {
               <div className="overflow-hidden rounded-3xl border border-indigo-500/20 shadow-2xl order-1 md:order-2">
                 <Image
                   src="/features-2-ai.png"
-                  alt="+50,000 Live Channels & VODs"
+                  alt="NixaTV 50,000+ Live Channels and 150,000+ VOD Movie Library"
+                  title="NixaTV 50,000+ Live Channels & VOD Catalog"
                   width={600}
                   height={400}
                   className="w-full h-72 object-cover hover:scale-105 transition-transform duration-500 opacity-90 hover:opacity-100"
@@ -264,7 +266,8 @@ export default function HowItWorksPage() {
               <div className="overflow-hidden rounded-3xl border border-indigo-500/20 shadow-2xl">
                 <Image
                   src="/features-3-ai.png"
-                  alt="Live TV and TV Guide EPG"
+                  alt="NixaTV Interactive EPG Electronic Program Guide and Catch-up TV"
+                  title="NixaTV Interactive EPG TV Guide"
                   width={600}
                   height={400}
                   className="w-full h-72 object-cover hover:scale-105 transition-transform duration-500 opacity-90 hover:opacity-100"

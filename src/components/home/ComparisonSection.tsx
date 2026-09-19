@@ -15,7 +15,8 @@ export default function ComparisonSection() {
           <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden border border-indigo-500/20 shadow-2xl group">
             <Image 
               src="/imggt1-1.webp" 
-              alt="Watching NixaTV on Smart TV" 
+              alt="NixaTV 4K IPTV Streaming Service on Smart TV with Live Sports and Movies"
+              title="NixaTV Premium 4K & 8K IPTV Streaming Platform"
               fill 
               unoptimized
               sizes="(max-width: 1024px) 100vw, 50vw"

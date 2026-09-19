@@ -71,7 +71,8 @@ export default function BrandMarquee({
             <div className="relative w-full h-full overflow-hidden rounded-lg">
               <Image 
                 src={`/${imagesFolder}/${brand}`} 
-                alt="Brand Logo" 
+                alt={`NixaTV Supported Channel - ${brand.replace(/\.[^/.]+$/, '').replace(/[-_]/g, ' ')}`}
+                title={`Watch ${brand.replace(/\.[^/.]+$/, '').replace(/[-_]/g, ' ')} on NixaTV`}
                 fill
                 unoptimized
                 className={imageClassName || "object-contain drop-shadow-md brightness-110"}

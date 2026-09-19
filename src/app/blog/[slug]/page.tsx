@@ -199,7 +199,14 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     img: ({ node, alt, src, ...props }: any) => (
       <span className="my-8 flex flex-col items-center block">
-        <img src={src} alt={alt} className="rounded-2xl max-w-full border border-indigo-500/20" {...props} />
+        <img
+          src={src}
+          alt={alt || "NixaTV IPTV Guide Illustration"}
+          title={alt || "NixaTV IPTV Guide Illustration"}
+          loading="lazy"
+          className="rounded-2xl max-w-full border border-indigo-500/20"
+          {...props}
+        />
         {alt && <span className="text-xs text-center block mt-2 text-slate-400 opacity-80">{alt}</span>}
       </span>
     ),

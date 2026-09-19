@@ -53,7 +53,8 @@ export default function HowItWorksSection() {
               <div className="overflow-hidden rounded-2xl border border-indigo-500/20 shadow-2xl relative aspect-[16/10] group">
                 <Image
                   src="/step-1-order-ai.png"
-                  alt="Place your order online"
+                  alt="Step 1: Choose your NixaTV IPTV Subscription Plan"
+                  title="Step 1: Select NixaTV IPTV Plan"
                   fill
                   sizes="(max-width: 768px) 100vw, 500px"
                   className="object-cover group-hover:scale-105 transition-transform duration-500 opacity-90"
@@ -74,7 +75,8 @@ export default function HowItWorksSection() {
               <div className="overflow-hidden rounded-2xl border border-indigo-500/20 shadow-2xl relative aspect-[16/10] order-2 md:order-1 group">
                 <Image
                   src="/step-2-setup-ai.png"
-                  alt="Instant installation"
+                  alt="Step 2: Instant NixaTV Activation and App Setup"
+                  title="Step 2: Connect NixaTV to your IPTV App"
                   fill
                   sizes="(max-width: 768px) 100vw, 500px"
                   className="object-cover group-hover:scale-105 transition-transform duration-500 opacity-90"
@@ -121,7 +123,8 @@ export default function HowItWorksSection() {
               <div className="overflow-hidden rounded-2xl border border-indigo-500/20 shadow-2xl relative aspect-[16/10] group">
                 <Image
                   src="/step-3-watch-ai.png"
-                  alt="Watch and enjoy live TV"
+                  alt="Step 3: Watch and Stream 50,000+ 4K Channels on NixaTV"
+                  title="Step 3: Enjoy High-Speed 4K IPTV Streaming"
                   fill
                   sizes="(max-width: 768px) 100vw, 500px"
                   className="object-cover group-hover:scale-105 transition-transform duration-500 opacity-90"

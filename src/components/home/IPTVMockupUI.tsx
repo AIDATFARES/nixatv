@@ -38,7 +38,8 @@ export default function IPTVMockupUI() {
       <div className="relative rounded-xl overflow-hidden border border-white/10 shadow-2xl group/img">
         <Image
           src="/webplayer-preview-900.webp"
-          alt="NixaTV Web Player 4K Interface"
+          alt="NixaTV Web Player 4K Interface - 50,000+ Live Channels & Sports"
+          title="NixaTV Web Player 4K Ultra HD Interface"
           width={900}
           height={506}
           priority

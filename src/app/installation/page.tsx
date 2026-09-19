@@ -52,7 +52,8 @@ export default function Installation() {
             <div className="w-full flex justify-center items-center">
               <Image 
                 src="/supported-devices-banner.webp"
-                alt="Supported Devices - Samsung, Apple TV, FireTV, Android TV, Roku, PS5, Xbox"
+                alt="NixaTV Supported IPTV Devices - Firestick, Android TV, Samsung Smart TV, LG webOS, Apple TV, Windows, MAG"
+                title="NixaTV Compatible IPTV Streaming Devices"
                 width={1024}
                 height={93}
                 unoptimized

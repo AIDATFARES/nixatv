@@ -49,7 +49,8 @@ export default function MovieStrips({ children }: { children?: React.ReactNode }
             <div key={i} className="flex-shrink-0 w-[280px] sm:w-[360px] md:w-[460px] aspect-[16/9] relative rounded-xl overflow-hidden shadow-2xl border border-white/10 hover:scale-105 hover:border-[#38BDF8]/50 hover:z-10 transition-all duration-300">
               <Image 
                 src={`/movie/${img}`} 
-                alt="IPTV Interface Preview" 
+                alt={`NixaTV 4K VOD & Cinema Streaming Preview - ${(i % channelImages.length) + 1}`}
+                title={`NixaTV 4K Movie & TV Series Streaming - ${(i % channelImages.length) + 1}`}
                 fill 
                 unoptimized
                 className="object-cover" 
