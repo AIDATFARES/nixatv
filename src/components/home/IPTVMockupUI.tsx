@@ -41,7 +41,7 @@ export default function IPTVMockupUI() {
           alt="NixaTV Web Player 4K Interface - 50,000+ Live Channels & Sports"
           title="NixaTV Web Player 4K Ultra HD Interface"
           width={900}
-          height={506}
+          height={502}
           priority
           unoptimized
           className="w-full h-auto object-cover rounded-xl group-hover/img:scale-[1.01] transition-transform duration-500"
