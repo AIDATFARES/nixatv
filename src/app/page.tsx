@@ -68,17 +68,17 @@ export default function Home() {
           bgClassName="bg-transparent"
           imagesFolder="devices"
           images={[
-            "Amazon-Fire-tv-stick-krooz-tv.webp",
-            "Apple-TV-krooz-tv.webp",
-            "hisense-krooz-tv.webp",
-            "iptv-smarter-krooz-tv.webp",
-            "LG-smart-krooz-tv.webp",
-            "Shield-krooz-tv.webp",
-            "Smart-android-tv-krooz-tv.webp",
-            "sony-select-krooz-tv.webp",
-            "Tv-media-boxs-krooz-tv.webp",
-            "Windows-krooz-tv.webp",
-            "xbox-live-krooz-tv.webp"
+            "Amazon-Fire-tv-stick-nixatv.webp",
+            "Apple-TV-nixatv.webp",
+            "hisense-nixatv.webp",
+            "iptv-smarter-nixatv.webp",
+            "LG-smart-nixatv.webp",
+            "Shield-nixatv.webp",
+            "Smart-android-tv-nixatv.webp",
+            "sony-select-nixatv.webp",
+            "Tv-media-boxs-nixatv.webp",
+            "Windows-nixatv.webp",
+            "xbox-live-nixatv.webp"
           ]}
           cardClassName="flex-shrink-0 w-[160px] h-[80px] md:w-[220px] md:h-[100px] relative bg-[#0C1222] border border-indigo-500/20 rounded-2xl p-4 md:p-6 hover:border-cyan-400/50 transition-all duration-300 shadow-md flex items-center justify-center"
           imageClassName="object-contain drop-shadow-sm invert opacity-80 hover:opacity-100"

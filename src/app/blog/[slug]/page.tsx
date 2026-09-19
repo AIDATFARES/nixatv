@@ -312,7 +312,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
                       <img
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90 group-hover:opacity-100"
                         alt={relPost.title}
-                        src={relPost.coverImage || "/blog/high-quality-iptv-service.webp"}
+                        src={relPost.coverImage || "/og-image.jpg"}
                       />
                     </div>
                     <div className="p-5 flex flex-col flex-grow">

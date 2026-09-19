@@ -63,23 +63,39 @@ export default function BrandMarquee({
       <div
         className={`flex gap-5 md:gap-8 px-6 items-center w-max ${brandList.length < 10 ? 'animate-marquee-fast' : 'animate-marquee'}`}
       >
-        {repeatList.map((brand, i) => (
-          <div 
-            key={i} 
-            className={cardClassName || "flex-shrink-0 w-[120px] h-[60px] md:w-[160px] md:h-[75px] relative bg-[#0D111B]/90 hover:bg-[#151D2A] border border-white/10 hover:border-[#38BDF8]/40 rounded-2xl p-3.5 hover:scale-105 transition-all duration-300 shadow-xl shadow-black/40 flex items-center justify-center"}
-          >
-            <div className="relative w-full h-full overflow-hidden rounded-lg">
-              <Image 
-                src={`/${imagesFolder}/${brand}`} 
-                alt={`NixaTV Supported Channel - ${brand.replace(/\.[^/.]+$/, '').replace(/[-_]/g, ' ')}`}
-                title={`Watch ${brand.replace(/\.[^/.]+$/, '').replace(/[-_]/g, ' ')} on NixaTV`}
-                fill
-                unoptimized
-                className={imageClassName || "object-contain drop-shadow-md brightness-110"}
-              />
+        {repeatList.map((brand, i) => {
+          const cleanName = brand
+            .replace(/\.[^/.]+$/, '')
+            .replace(/-nixatv$/i, '')
+            .replace(/-krooz-tv$/i, '')
+            .replace(/[-_]/g, ' ')
+            .trim();
+          const isDevice = imagesFolder === "devices";
+          const altText = isDevice 
+            ? `NixaTV Supported Device - ${cleanName}` 
+            : `NixaTV Supported Channel - ${cleanName}`;
+          const titleText = isDevice 
+            ? `Stream NixaTV on ${cleanName}` 
+            : `Watch ${cleanName} on NixaTV`;
+
+          return (
+            <div 
+              key={i} 
+              className={cardClassName || "flex-shrink-0 w-[120px] h-[60px] md:w-[160px] md:h-[75px] relative bg-[#0D111B]/90 hover:bg-[#151D2A] border border-white/10 hover:border-[#38BDF8]/40 rounded-2xl p-3.5 hover:scale-105 transition-all duration-300 shadow-xl shadow-black/40 flex items-center justify-center"}
+            >
+              <div className="relative w-full h-full overflow-hidden rounded-lg">
+                <Image 
+                  src={`/${imagesFolder}/${brand}`} 
+                  alt={altText}
+                  title={titleText}
+                  fill
+                  unoptimized
+                  className={imageClassName || "object-contain drop-shadow-md brightness-110"}
+                />
+              </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </div>
   );
