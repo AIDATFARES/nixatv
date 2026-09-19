@@ -39,7 +39,7 @@ export default function HeroSection() {
 
             {/* Main Title H1 */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.1] text-white">
-              NixaTV IPTV — Stream 50,000+ Live Channels & Movies in{" "}
+              NixaTV — Stream 50,000+ Live Channels & Movies in{" "}
               <span className="bg-gradient-to-r from-indigo-400 via-purple-300 to-cyan-400 bg-clip-text text-transparent">
                 Ultra-Crisp 4K & 8K
               </span>
@@ -47,7 +47,7 @@ export default function HeroSection() {
 
             {/* Supporting Paragraph */}
             <p className="text-base sm:text-lg text-slate-300 leading-relaxed max-w-xl font-normal">
-              Experience the pinnacle of streaming performance with NixaTV. Enjoy buffer-free 60 FPS live sports, worldwide premium channels, and over 150,000 on-demand movies & series. Choose your <Link href="/pricing" className="text-cyan-400 hover:text-cyan-300 underline underline-offset-4 font-semibold">NixaTV subscription plan</Link> or follow our fast <Link href="/installation" className="text-cyan-400 hover:text-cyan-300 underline underline-offset-4 font-semibold">setup guide</Link> for Firestick, Smart TV, and mobile devices.
+              Experience the pinnacle of streaming performance with NixaTV IPTV. Enjoy buffer-free 60 FPS live sports, worldwide premium channels, and over 150,000 on-demand movies & series. Choose your <Link href="/pricing" className="text-cyan-400 hover:text-cyan-300 underline underline-offset-4 font-semibold">NixaTV subscription plan</Link> or follow our fast <Link href="/installation" className="text-cyan-400 hover:text-cyan-300 underline underline-offset-4 font-semibold">setup guide</Link> for Firestick, Smart TV, and mobile devices.
             </p>
 
             {/* CTAs */}

@@ -24,13 +24,13 @@ export default function DeviceSupport() {
             NIXATV COMPATIBILITY
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight">
-            Stream NixaTV IPTV Seamlessly on{" "}
+            Stream NixaTV Seamlessly on{" "}
             <span className="bg-gradient-to-r from-indigo-400 via-purple-300 to-cyan-400 bg-clip-text text-transparent">
               All Your Devices
             </span>
           </h2>
           <p className="text-slate-300 text-base sm:text-lg">
-            Enjoy complete multi-screen compatibility with zero buffering. Follow our simple <Link href="/installation" className="text-cyan-400 hover:underline font-medium">installation tutorials</Link> for Firestick, Smart TV, Android, Apple TV, and PC.
+            Enjoy complete multi-screen compatibility with your NixaTV IPTV subscription with zero buffering. Follow our simple <Link href="/installation" className="text-cyan-400 hover:underline font-medium">installation tutorials</Link> for Firestick, Smart TV, Android, Apple TV, and PC.
           </p>
         </div>
 

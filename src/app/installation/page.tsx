@@ -17,10 +17,10 @@ export default function Installation() {
       <div className="mx-auto w-full max-w-[1440px] px-5 pb-20 pt-12 sm:px-8 md:px-12">
       <header className="mx-auto mb-16 max-w-3xl text-center sm:mb-20">
         <span className="inline-flex items-center gap-1.5 rounded-full border border-indigo-500/30 bg-[#0C1222] px-4 py-1.5 text-xs font-bold uppercase tracking-[0.18em] text-cyan-400">
-          <Sparkles className="w-3.5 h-3.5" /> NIXATV IPTV INSTALLATION
+          <Sparkles className="w-3.5 h-3.5" /> NIXATV INSTALLATION
         </span>
         <h1 className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-black leading-[1.05] tracking-tight">
-          <span className="block text-white uppercase">NixaTV IPTV Setup Guide</span>
+          <span className="block text-white uppercase">NixaTV Setup Guide</span>
           <span className="mt-2 block bg-gradient-to-r from-indigo-400 via-purple-300 to-cyan-400 bg-clip-text text-transparent uppercase">For All Supported Devices</span>
         </h1>
         <p className="mx-auto mt-5 max-w-2xl text-sm leading-6 text-slate-300 sm:text-base">Comprehensive step-by-step instructions to configure NixaTV IPTV on your Firestick, Smart TV, Android, Apple TV, and PC in under 5 minutes.</p>

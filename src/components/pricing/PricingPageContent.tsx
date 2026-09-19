@@ -110,7 +110,7 @@ export default function PricingPageContent() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 z-10">
         <header className="mx-auto max-w-3xl text-center mb-16">
           <span className="inline-flex items-center gap-1.5 rounded-full border border-indigo-500/30 bg-[#0C1222] px-4 py-1.5 text-xs font-bold uppercase tracking-[0.18em] text-cyan-400">
-            <Sparkles className="w-3.5 h-3.5" /> NIXATV IPTV PLANS
+            <Sparkles className="w-3.5 h-3.5" /> NIXATV PLANS
           </span>
           <h1 className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-black leading-[1.05] tracking-tight">
             <span className="block text-white uppercase">Premium IPTV Subscription</span>

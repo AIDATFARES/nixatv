@@ -14,10 +14,10 @@ export default function SupportCtaSection() {
             <MessageSquare className="h-5 w-5" />
           </div>
           <h2 className="text-2xl sm:text-3xl font-black text-white leading-tight tracking-tight">
-            Need Immediate <span className="bg-gradient-to-r from-indigo-400 via-purple-300 to-cyan-400 bg-clip-text text-transparent">NixaTV IPTV</span> Assistance?
+            Need Immediate <span className="bg-gradient-to-r from-indigo-400 via-purple-300 to-cyan-400 bg-clip-text text-transparent">NixaTV</span> Assistance?
           </h2>
           <p className="mt-3 text-xs sm:text-sm leading-relaxed text-slate-400">
-            Our dedicated technical team is available 24/7. Get instant help with subscription activation, device configuration, or free trial access via WhatsApp or email.
+            Our dedicated technical team is available 24/7. Get instant help with your NixaTV IPTV subscription activation, device configuration, or free trial access via WhatsApp or email.
           </p>
         </div>
         <div className="flex shrink-0 flex-col gap-3 sm:w-44">

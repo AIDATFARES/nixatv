@@ -33,11 +33,11 @@ export default function TestimonialsSection() {
           <h2 className="mt-6 text-4xl font-black uppercase leading-[0.98] tracking-tight text-white sm:text-5xl animate-fade-up">
             <span className="block">Join Thousands of Highly</span>
             <span className="mt-1 block bg-gradient-to-r from-indigo-400 via-purple-300 to-cyan-400 bg-clip-text text-transparent">
-              Satisfied NixaTV IPTV Streamers
+              Satisfied NixaTV Streamers
             </span>
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-sm leading-6 text-slate-300 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-            Discover why thousands of users worldwide have made NixaTV their primary entertainment source. Read authentic reviews highlighting our unparalleled stability, comprehensive live sports coverage, and exceptional 4K visual quality.
+            Discover why thousands of users worldwide have made NixaTV IPTV their primary entertainment source. Read authentic reviews highlighting our unparalleled stability, comprehensive live sports coverage, and exceptional 4K visual quality.
           </p>
         </div>
 

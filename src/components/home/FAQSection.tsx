@@ -66,16 +66,16 @@ export default function FAQSection() {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <span className="inline-flex items-center gap-2 border border-indigo-500/30 rounded-full px-4 py-1 bg-[#0C1222] text-cyan-400 text-xs font-bold uppercase tracking-widest">
-            <Sparkles className="w-3.5 h-3.5" /> NIXATV IPTV FAQ
+            <Sparkles className="w-3.5 h-3.5" /> NIXATV FAQ
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight">
             Frequently Asked Questions About{" "}
             <span className="bg-gradient-to-r from-indigo-400 via-purple-300 to-cyan-400 bg-clip-text text-transparent">
-              NixaTV IPTV
+              NixaTV
             </span>
           </h2>
           <p className="text-slate-300 text-base sm:text-lg">
-            Everything you need to know about our IPTV subscription plans, installation guides, live channel catalog, and 24/7 technical support.
+            Everything you need to know about our NixaTV IPTV subscription plans, installation guides, live channel catalog, and 24/7 technical support.
           </p>
         </div>
 

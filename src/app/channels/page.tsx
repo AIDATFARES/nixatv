@@ -116,7 +116,7 @@ export default function ChannelsPage() {
             transition={{ delay: 0.1 }}
             className="mt-2 text-4xl sm:text-5xl lg:text-6xl font-black leading-[1.05] tracking-tight uppercase"
           >
-            <span className="block text-white">NixaTV IPTV Channel Lineup</span>
+            <span className="block text-white">NixaTV Channel Lineup</span>
             <span className="mt-2 block bg-gradient-to-r from-indigo-400 via-purple-300 to-cyan-400 bg-clip-text text-transparent">Unlimited Live TV &amp; VODs</span>
           </motion.h1>
 

@@ -42,14 +42,14 @@ export default function ComparisonSection() {
           {/* Text Side */}
           <div className="flex flex-col justify-center">
             <span className="inline-flex items-center gap-2 border border-indigo-500/30 rounded-full px-4 py-1 bg-[#0C1222] text-cyan-400 text-xs font-bold uppercase tracking-widest w-fit mb-4">
-              ABOUT NIXATV IPTV
+              ABOUT NIXATV
             </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-white mb-6 tracking-tight leading-tight">
-              What is <span className="bg-gradient-to-r from-indigo-400 via-purple-300 to-cyan-400 bg-clip-text text-transparent">NixaTV IPTV?</span> — Premium 4K & 8K Service
+              What is <span className="bg-gradient-to-r from-indigo-400 via-purple-300 to-cyan-400 bg-clip-text text-transparent">NixaTV?</span> — Premium 4K & 8K Service
             </h2>
             
             <p className="text-slate-300 text-sm md:text-base mb-4 leading-relaxed">
-              NixaTV is an elite high-performance IPTV subscription provider servicing users across the USA, Canada, UK, and Europe. Delivering uncompressed live TV broadcasts, constantly updated movie libraries, and 60 FPS sports streams straight to your devices without expensive hardware or hidden charges.
+              NixaTV IPTV is an elite high-performance subscription provider servicing users across the USA, Canada, UK, and Europe. Delivering uncompressed live TV broadcasts, constantly updated movie libraries, and 60 FPS sports streams straight to your devices without expensive hardware or hidden charges.
             </p>
             
             <p className="text-slate-300 text-sm md:text-base mb-8 leading-relaxed">

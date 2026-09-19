@@ -13,13 +13,13 @@ export default function HowItWorksSection() {
             <Sparkles className="w-3.5 h-3.5" /> FAST 3-STEP SETUP
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-white">
-            Start Streaming NixaTV IPTV in{" "}
+            Start Streaming NixaTV in{" "}
             <span className="bg-gradient-to-r from-indigo-400 via-purple-300 to-cyan-400 bg-clip-text text-transparent">
               3 Simple Steps
             </span>
           </h2>
           <p className="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto">
-            Get setup in under 3 minutes with automated credential delivery and instant activation.
+            Get setup with your NixaTV IPTV subscription in under 3 minutes with automated credential delivery and instant activation.
           </p>
         </div>
 

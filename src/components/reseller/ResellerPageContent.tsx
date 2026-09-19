@@ -166,16 +166,16 @@ export default function ResellerPageContent() {
         <header className="relative mx-auto max-w-4xl text-center">
           <span className="inline-flex items-center gap-2 rounded-full border border-indigo-500/30 bg-[#0C1222] px-4 py-1.5 text-xs font-bold uppercase tracking-[0.18em] text-cyan-400">
             <Sparkles className="h-3.5 w-3.5" />
-            NIXATV IPTV RESELLER PROGRAM
+            NIXATV RESELLER PROGRAM
           </span>
 
           <h1 className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-black leading-[1.05] tracking-tight uppercase">
-            <span className="block text-white">NixaTV IPTV Reseller Program</span>
+            <span className="block text-white">NixaTV Reseller Program</span>
             <span className="mt-2 block bg-gradient-to-r from-indigo-400 via-purple-300 to-cyan-400 bg-clip-text text-transparent">Launch Your IPTV Business</span>
           </h1>
 
           <p className="mx-auto mt-6 max-w-3xl text-xs sm:text-sm leading-relaxed text-slate-300">
-            Launch your high-margin IPTV reseller business with NixaTV. Access high-capacity 60 FPS Anti-Freeze servers, robust Xtream Codes reseller panels, instant credit delivery, and 24/7 partner support.
+            Launch your high-margin IPTV reseller business with NixaTV IPTV. Access high-capacity 60 FPS Anti-Freeze servers, robust Xtream Codes reseller panels, instant credit delivery, and 24/7 partner support.
           </p>
 
           <div className="mt-8 flex items-center justify-center gap-4">

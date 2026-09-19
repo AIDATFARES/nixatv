@@ -192,10 +192,10 @@ export default function FAQ() {
       <div className="mx-auto max-w-[1140px]">
         <header className="mx-auto mb-12 max-w-3xl text-center md:mb-16">
           <span className="inline-flex items-center gap-1.5 rounded-full border border-indigo-500/30 bg-[#0C1222] px-4 py-1.5 text-xs font-bold uppercase tracking-[0.18em] text-cyan-400">
-            <Sparkles className="w-3.5 h-3.5" /> NIXATV IPTV HELP CENTER
+            <Sparkles className="w-3.5 h-3.5" /> NIXATV HELP CENTER
           </span>
           <h1 className="mt-6 text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight leading-tight uppercase">
-            NixaTV IPTV Frequently Asked Questions<br />
+            NixaTV Frequently Asked Questions<br />
             <span className="bg-gradient-to-r from-indigo-400 via-purple-300 to-cyan-400 bg-clip-text text-transparent">(FAQ &amp; Support)</span>
           </h1>
           <p className="mx-auto mt-5 max-w-2xl text-sm sm:text-base leading-relaxed text-slate-300">

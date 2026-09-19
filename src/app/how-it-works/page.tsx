@@ -110,7 +110,7 @@ export default function HowItWorksPage() {
             <Sparkles className="w-3.5 h-3.5" /> Easy 3-Step Process
           </span>
           <h1 className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.05] uppercase">
-            <span className="text-white">How Does NixaTV IPTV Work?</span>
+            <span className="text-white">How Does NixaTV Work?</span>
             <br />
             <span className="bg-gradient-to-r from-indigo-400 via-purple-300 to-cyan-400 bg-clip-text text-transparent">3-Step 4K Setup Guide</span>
           </h1>

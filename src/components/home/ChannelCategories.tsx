@@ -31,7 +31,7 @@ export default function ChannelCategories() {
         {/* Heading */}
         <div className="mx-auto mb-12 max-w-4xl text-center space-y-3">
           <span className="inline-flex items-center gap-2 border border-indigo-500/30 rounded-full px-4 py-1 bg-[#0C1222] text-cyan-400 text-xs font-bold uppercase tracking-widest">
-            <Sparkles className="w-3.5 h-3.5" /> WHY NIXATV IPTV STANDS OUT
+            <Sparkles className="w-3.5 h-3.5" /> WHY NIXATV STANDS OUT
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight leading-tight">
             Engineered to Deliver the <br className="hidden md:block" />

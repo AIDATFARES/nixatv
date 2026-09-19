@@ -22,14 +22,14 @@ export default function Contact() {
 
       <div className="mx-auto mb-14 max-w-3xl text-center relative z-10">
         <span className="inline-flex items-center gap-1.5 rounded-full border border-indigo-500/30 bg-[#0C1222] px-4 py-1.5 text-xs font-bold uppercase tracking-[0.18em] text-cyan-400">
-          <Sparkles className="w-3.5 h-3.5" /> NIXATV IPTV SUPPORT
+          <Sparkles className="w-3.5 h-3.5" /> NIXATV SUPPORT
         </span>
         <h1 className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-black leading-[1.05] tracking-tight uppercase">
           <span className="block text-white">Get in Touch with</span>
-          <span className="mt-2 block bg-gradient-to-r from-indigo-400 via-purple-300 to-cyan-400 bg-clip-text text-transparent">NixaTV IPTV Support</span>
+          <span className="mt-2 block bg-gradient-to-r from-indigo-400 via-purple-300 to-cyan-400 bg-clip-text text-transparent">NixaTV Support</span>
         </h1>
         <p className="mx-auto mt-5 max-w-2xl text-xs sm:text-sm leading-relaxed text-slate-300">
-          We are here 24/7 to ensure your 4K/8K IPTV streaming experience is flawless. Reach out for instant subscription setup, free trial access, or technical guidance.
+          We are here 24/7 to ensure your NixaTV IPTV streaming experience is flawless. Reach out for instant subscription setup, free trial access, or technical guidance.
         </p>
       </div>
 

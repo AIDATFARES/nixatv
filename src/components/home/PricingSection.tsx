@@ -118,10 +118,10 @@ export default function PricingSection() {
             <Sparkles className="w-3.5 h-3.5" /> TRANSPARENT NIXATV SUBSCRIPTIONS
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-white">
-            Choose Your <span className="bg-gradient-to-r from-indigo-400 via-purple-300 to-cyan-400 bg-clip-text text-transparent">NixaTV IPTV</span> Subscription Plan
+            Choose Your <span className="bg-gradient-to-r from-indigo-400 via-purple-300 to-cyan-400 bg-clip-text text-transparent">NixaTV</span> Subscription Plan
           </h2>
           <p className="text-base sm:text-lg text-slate-300">
-            No contracts or hidden hardware costs. Instant automated activation within 3 minutes for Smart TV, Firestick, Android, and Apple TV.
+            No contracts or hidden hardware costs. Instant automated activation for your NixaTV IPTV subscription within 3 minutes for Smart TV, Firestick, Android, and Apple TV.
           </p>
         </header>
 
