@@ -22,15 +22,15 @@ const geist = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "NixaTV – Premium 4K & 8K IPTV Subscription | 50,000+ Live Channels",
-  description: "Stream 50,000+ live sports & channels + 150,000+ VOD movies in 60 FPS 4K Ultra HD. Anti-Freeze v2 tech, zero buffering, instant WhatsApp setup with NixaTV.",
+  title: "NixaTV – Best IPTV Service 2026 | 50K+ Channels & Live Sports",
+  description: "Upgrade to NixaTV for buffer-free 4K/8K live sports, 50,000+ channels & 150,000+ movies in 60 FPS. Anti-Freeze technology, instant activation & 24/7 support.",
   metadataBase: new URL("https://www.nixatv.pro"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "NixaTV – Premium 4K & 8K IPTV Subscription | 50,000+ Channels",
-    description: "Stream 50,000+ live sports & channels + 150,000+ VOD movies in 60 FPS 4K Ultra HD. Anti-Freeze v2 tech, zero buffering, instant WhatsApp setup with NixaTV.",
+    title: "NixaTV – Best IPTV Service 2026 | 50K+ Channels & Live Sports",
+    description: "Upgrade to NixaTV for buffer-free 4K/8K live sports, 50,000+ channels & 150,000+ movies in 60 FPS. Anti-Freeze technology, instant activation & 24/7 support.",
     url: "https://www.nixatv.pro",
     siteName: "NixaTV",
     images: [
@@ -46,8 +46,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "NixaTV – Premium 4K & 8K IPTV Subscription | 50,000+ Channels",
-    description: "Stream 50,000+ live sports & channels + 150,000+ VOD movies in 60 FPS 4K Ultra HD. Anti-Freeze v2 tech, zero buffering, instant WhatsApp setup with NixaTV.",
+    title: "NixaTV – Best IPTV Service 2026 | 50K+ Channels & Live Sports",
+    description: "Upgrade to NixaTV for buffer-free 4K/8K live sports, 50,000+ channels & 150,000+ movies in 60 FPS. Anti-Freeze technology, instant activation & 24/7 support.",
     images: [
       {
         url: "/og-image.jpg",
@@ -84,7 +84,7 @@ const websiteJsonLd = {
   "@type": "WebSite",
   name: "NixaTV",
   url: "https://www.nixatv.pro",
-  description: "Premium 4K & 8K IPTV Subscription with 50,000+ Live Channels & 150,000+ VODs",
+  description: "Best IPTV Service in 2026 with 50,000+ Live Channels & 150,000+ VODs in 4K/8K",
   potentialAction: {
     "@type": "SearchAction",
     target: "https://www.nixatv.pro/channels?q={search_term_string}",

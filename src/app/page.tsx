@@ -13,8 +13,8 @@ import SupportCtaSection from "@/components/home/SupportCtaSection";
 import Link from "next/link";
 
 export const metadata = {
-  title: "NixaTV – Premium 4K & 8K IPTV Subscription | 50,000+ Channels",
-  description: "Stream 50,000+ live sports & channels + 150,000+ VOD movies in 60 FPS 4K Ultra HD with NixaTV. Instant activation, zero buffering & 24/7 WhatsApp support.",
+  title: "NixaTV – Best IPTV Service 2026 | 50K+ Channels & Live Sports",
+  description: "Upgrade to NixaTV for buffer-free 4K/8K live sports, 50,000+ channels & 150,000+ movies in 60 FPS. Anti-Freeze technology, instant activation & 24/7 support.",
   alternates: {
     canonical: "/",
   },
