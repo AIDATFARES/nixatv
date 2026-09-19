@@ -3,72 +3,97 @@ import { blogPosts } from '@/data/blog';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.nixatv.pro';
+  const today = new Date().toISOString().split('T')[0];
 
   // Define static routes
   const staticRoutes: MetadataRoute.Sitemap = [
     {
-      url: `${baseUrl}`,
-      lastModified: new Date(),
+      url: `${baseUrl}/`,
+      lastModified: today,
       changeFrequency: 'weekly',
-      priority: 1,
+      priority: 1.0,
     },
     {
       url: `${baseUrl}/pricing`,
-      lastModified: new Date(),
+      lastModified: today,
       changeFrequency: 'monthly',
       priority: 0.9,
     },
     {
       url: `${baseUrl}/channels`,
-      lastModified: new Date(),
+      lastModified: today,
       changeFrequency: 'weekly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/installation`,
-      lastModified: new Date(),
+      lastModified: today,
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/faq`,
-      lastModified: new Date(),
+      lastModified: today,
       changeFrequency: 'monthly',
       priority: 0.7,
     },
     {
       url: `${baseUrl}/blog`,
-      lastModified: new Date(),
+      lastModified: today,
       changeFrequency: 'weekly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/contact`,
-      lastModified: new Date(),
+      lastModified: today,
       changeFrequency: 'yearly',
       priority: 0.6,
     },
     {
       url: `${baseUrl}/reseller`,
-      lastModified: new Date(),
+      lastModified: today,
       changeFrequency: 'monthly',
       priority: 0.7,
     },
     {
       url: `${baseUrl}/how-it-works`,
-      lastModified: new Date(),
+      lastModified: today,
       changeFrequency: 'monthly',
       priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/privacy-policy`,
+      lastModified: today,
+      changeFrequency: 'yearly',
+      priority: 0.4,
+    },
+    {
+      url: `${baseUrl}/refund-policy`,
+      lastModified: today,
+      changeFrequency: 'yearly',
+      priority: 0.4,
+    },
+    {
+      url: `${baseUrl}/dmca`,
+      lastModified: today,
+      changeFrequency: 'yearly',
+      priority: 0.4,
     },
   ];
 
   // Map dynamic blog routes
-  const blogRoutes: MetadataRoute.Sitemap = blogPosts.map((post) => ({
-    url: `${baseUrl}/blog/${post.slug}`,
-    lastModified: isNaN(new Date(post.date).getTime()) ? new Date() : new Date(post.date),
-    changeFrequency: 'monthly',
-    priority: 0.7,
-  }));
+  const blogRoutes: MetadataRoute.Sitemap = blogPosts.map((post) => {
+    let postDate = today;
+    if (post.date && !isNaN(new Date(post.date).getTime())) {
+      postDate = new Date(post.date).toISOString().split('T')[0];
+    }
+    return {
+      url: `${baseUrl}/blog/${post.slug}`,
+      lastModified: postDate,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    };
+  });
 
   return [...staticRoutes, ...blogRoutes];
 }
